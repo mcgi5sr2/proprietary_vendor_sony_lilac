@@ -190,7 +190,9 @@ PRODUCT_COPY_FILES += \
     vendor/sony/lilac/proprietary/etc/permissions/com.sonymobile.camera.addon.xml:system/etc/permissions/com.sonymobile.camera.addon.xml \
     vendor/sony/lilac/proprietary/etc/permissions/com.sonymobile.getmore.api.xml:system/etc/permissions/com.sonymobile.getmore.api.xml \
     vendor/sony/lilac/proprietary/etc/permissions/com.sonymobile.imageprocessor.xml:system/etc/permissions/com.sonymobile.imageprocessor.xml \
+    vendor/sony/lilac/proprietary/etc/permissions/com.sonymobile.miscta.xml:system/etc/permissions/com.sonymobile.miscta.xml \
     vendor/sony/lilac/proprietary/etc/permissions/embms.xml:system/etc/permissions/embms.xml \
+    vendor/sony/lilac/proprietary/etc/permissions/org.simalliance.openmobileapi.xml:system/etc/permissions/org.simalliance.openmobileapi.xml \
     vendor/sony/lilac/proprietary/etc/permissions/privapp-permissions-sony.xml:system/etc/permissions/privapp-permissions-sony.xml \
     vendor/sony/lilac/proprietary/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml \
     vendor/sony/lilac/proprietary/etc/permissions/qti-vzw-ims-internal.xml:system/etc/permissions/qti-vzw-ims-internal.xml \
@@ -205,7 +207,9 @@ PRODUCT_COPY_FILES += \
     vendor/sony/lilac/proprietary/framework/com.sonymobile.camera.addon_impl.jar:system/framework/com.sonymobile.camera.addon_impl.jar \
     vendor/sony/lilac/proprietary/framework/com.sonymobile.getmore.api.jar:system/framework/com.sonymobile.getmore.api.jar \
     vendor/sony/lilac/proprietary/framework/com.sonymobile.imageprocessor.bypasscamera_impl.jar:system/framework/com.sonymobile.imageprocessor.bypasscamera_impl.jar \
+    vendor/sony/lilac/proprietary/framework/com.sonymobile.miscta_impl.jar:system/framework/com.sonymobile.miscta_impl.jar \
     vendor/sony/lilac/proprietary/framework/embmslibrary.jar:system/framework/embmslibrary.jar \
+    vendor/sony/lilac/proprietary/framework/org.simalliance.openmobileapi.jar:system/framework/org.simalliance.openmobileapi.jar \
     vendor/sony/lilac/proprietary/framework/qti-telephony-common.jar:system/framework/qti-telephony-common.jar \
     vendor/sony/lilac/proprietary/lib/com.qualcomm.qti.imscmservice@1.0.so:system/lib/com.qualcomm.qti.imscmservice@1.0.so \
     vendor/sony/lilac/proprietary/vendor/lib/hw/libdisplay.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/libdisplay.default.so \
@@ -213,6 +217,8 @@ PRODUCT_COPY_FILES += \
     vendor/sony/lilac/proprietary/lib/lib-imsvideocodec.so:system/lib/lib-imsvideocodec.so \
     vendor/sony/lilac/proprietary/lib/lib-imsvtextutils.so:system/lib/lib-imsvtextutils.so \
     vendor/sony/lilac/proprietary/lib/lib-imsvtutils.so:system/lib/lib-imsvtutils.so \
+    vendor/sony/lilac/proprietary/lib/libMiscTAApi.so:system/lib/libMiscTAApi.so \
+    vendor/sony/lilac/proprietary/lib/libMiscTaWrapper.so:system/lib/libMiscTaWrapper.so \
     vendor/sony/lilac/proprietary/vendor/lib/libblurbuster.so:$(TARGET_COPY_OUT_VENDOR)/lib/libblurbuster.so \
     vendor/sony/lilac/proprietary/lib/libcacao_client.so:system/lib/libcacao_client.so \
     vendor/sony/lilac/proprietary/lib/libcacao_pal.so:system/lib/libcacao_pal.so \
@@ -296,6 +302,8 @@ PRODUCT_COPY_FILES += \
     vendor/sony/lilac/proprietary/lib64/lib-imsvt.so:system/lib64/lib-imsvt.so \
     vendor/sony/lilac/proprietary/lib64/lib-imsvtextutils.so:system/lib64/lib-imsvtextutils.so \
     vendor/sony/lilac/proprietary/lib64/lib-imsvtutils.so:system/lib64/lib-imsvtutils.so \
+    vendor/sony/lilac/proprietary/lib64/libMiscTAApi.so:system/lib64/libMiscTAApi.so \
+    vendor/sony/lilac/proprietary/lib64/libMiscTaWrapper.so:system/lib64/libMiscTaWrapper.so \
     vendor/sony/lilac/proprietary/lib64/libaptXHD_encoder.so:system/lib64/libaptXHD_encoder.so \
     vendor/sony/lilac/proprietary/lib64/libaptX_encoder.so:system/lib64/libaptX_encoder.so \
     vendor/sony/lilac/proprietary/vendor/lib64/libblurbuster.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libblurbuster.so \
@@ -392,6 +400,7 @@ PRODUCT_PACKAGES += \
     CameraExtensionPermission-release \
     ImageProcessorPermission-release \
     QtiTelephonyService \
+    UiccTerminal \
     datastatusnotification \
     embms \
     ims \
@@ -399,6 +408,7 @@ PRODUCT_PACKAGES += \
     CNEService \
     CameraCommon \
     CameraPanorama-release \
+    CustomizationSelector \
     SemcCameraUI-jniLibs64-xhdpi-release \
     SomcMovieCreator-release \
     SoundPhotoCamera-xhdpi-release \
